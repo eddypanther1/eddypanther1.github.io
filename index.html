@@ -4,110 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Japanese-to-English Translation & Web Development</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            background: #f9f9f9;
-        }
-        header {
-            background: #0078d7;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #005a9e;
-            padding: 0.5rem 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        .section {
-            margin-bottom: 2rem;
-            padding: 1rem;
-            background: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background: #333;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <h1>Japanese-to-English Translation & Full-Stack Web Development</h1>
-        <p>Friendly and Professional Services for Your Needs</p>
+<body class="bg-[#faf3dd] text-[#5e6472] font-sans">
+    <header class="bg-[#ffa69e] text-white py-6 text-center">
+        <h1 class="text-3xl font-bold">Japanese-to-English Translation & Full-Stack Web Development</h1>
+        <p class="mt-2">Friendly and Professional Services for Your Needs</p>
     </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
+    <nav class="bg-[#aed9e0] text-[#5e6472] py-4">
+        <ul class="flex justify-center space-x-8">
+            <li><a href="#about" class="hover:text-[#ffa69e]">About</a></li>
+            <li><a href="#services" class="hover:text-[#ffa69e]">Services</a></li>
+            <li><a href="#portfolio" class="hover:text-[#ffa69e]">Portfolio</a></li>
+            <li><a href="#blog" class="hover:text-[#ffa69e]">Blog</a></li>
+            <li><a href="#contact" class="hover:text-[#ffa69e]">Contact</a></li>
+        </ul>
     </nav>
-    <main class="container">
-        <section id="about" class="section">
-            <h2>About Me</h2>
+    <main class="container mx-auto px-4 py-8">
+        <section id="about" class="bg-white rounded-lg shadow-lg p-6 mb-6">
+            <h2 class="text-2xl font-bold mb-4">About Me</h2>
             <p>Hello! I'm a passionate solo freelancer specializing in Japanese-to-English translations and full-stack web development. I aim to deliver high-quality services with a friendly yet professional approach tailored to your needs.</p>
         </section>
-        <section id="services" class="section">
-            <h2>Services</h2>
-            <ul>
+        <section id="services" class="bg-white rounded-lg shadow-lg p-6 mb-6">
+            <h2 class="text-2xl font-bold mb-4">Services</h2>
+            <ul class="list-disc pl-6">
                 <li>Japanese-to-English Translation</li>
                 <li>Custom Web Development (Frontend & Backend)</li>
                 <li>Blog and Portfolio Website Creation</li>
                 <li>Responsive Design and Optimization</li>
             </ul>
         </section>
-        <section id="portfolio" class="section">
-            <h2>Portfolio</h2>
+        <section id="portfolio" class="bg-white rounded-lg shadow-lg p-6 mb-6">
+            <h2 class="text-2xl font-bold mb-4">Portfolio</h2>
             <p>Check out some of my recent projects:</p>
-            <ul>
-                <li><a href="#">Project 1 - Translation of a Japanese Technical Manual</a></li>
-                <li><a href="#">Project 2 - Full-Stack E-commerce Website</a></li>
-                <li><a href="#">Project 3 - Personal Portfolio and Blog</a></li>
+            <ul class="list-disc pl-6">
+                <li><a href="#" class="text-[#ffa69e] hover:underline">Project 1 - Translation of a Japanese Technical Manual</a></li>
+                <li><a href="#" class="text-[#ffa69e] hover:underline">Project 2 - Full-Stack E-commerce Website</a></li>
+                <li><a href="#" class="text-[#ffa69e] hover:underline">Project 3 - Personal Portfolio and Blog</a></li>
             </ul>
         </section>
-        <section id="blog" class="section">
-            <h2>Blog</h2>
+        <section id="blog" class="bg-white rounded-lg shadow-lg p-6 mb-6">
+            <h2 class="text-2xl font-bold mb-4">Blog</h2>
             <p>Read my latest articles on translation tips, web development, and freelancing:</p>
-            <ul>
-                <li><a href="#">5 Tips for Accurate Japanese-to-English Translation</a></li>
-                <li><a href="#">How to Build a Responsive Website</a></li>
-                <li><a href="#">Freelancing: Balancing Work and Life</a></li>
+            <ul class="list-disc pl-6">
+                <li><a href="#" class="text-[#ffa69e] hover:underline">5 Tips for Accurate Japanese-to-English Translation</a></li>
+                <li><a href="#" class="text-[#ffa69e] hover:underline">How to Build a Responsive Website</a></li>
+                <li><a href="#" class="text-[#ffa69e] hover:underline">Freelancing: Balancing Work and Life</a></li>
             </ul>
         </section>
-        <section id="contact" class="section">
-            <h2>Contact Me</h2>
+        <section id="contact" class="bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
             <p>Get in touch to discuss your project:</p>
-            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>Email: <a href="mailto:your-email@example.com" class="text-[#ffa69e] hover:underline">your-email@example.com</a></p>
         </section>
     </main>
-    <footer>
+    <footer class="bg-[#5e6472] text-white text-center py-4">
         <p>&copy; 2025 Your Name. All rights reserved.</p>
     </footer>
 </body>
